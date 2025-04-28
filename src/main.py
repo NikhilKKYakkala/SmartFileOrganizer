@@ -1,48 +1,63 @@
 import os
-from utils.organizer import organize_files
 import logging
+from utils.organizer import organize_files
+from utils.logger import setup_logging
 
-log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-log_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'logs', 'organizer.log')
+setup_logging()
 
-file_handler = logging.FileHandler(log_file)
-file_handler.setFormatter(log_formatter)
+def get_folder_path():
+    while True:
+        folder_path = input("Enter the folder path to organize: ")
+        
+        if not os.path.isdir(folder_path):
+            logging.error(f"Invalid directory: {folder_path}")
+            print('⚠️ The folder you entered is Invalid. Please try again.\n')
+        else:
+            return folder_path
 
-console_handler = logging.StreamHandler()
-console_handler.setFormatter(log_formatter)
+def get_method_choice():
+    while True:
+        print("\nHow would you like to organize your files?")
+        print("1. By file type")
+        print("2. By date")
+        print("3. By both")
+        
+        method = input("Choose an option (1/2/3): ").strip()
+        
+        if method not in ["1", "2", "3"]:
+            logging.error("Invalid organization method selected.")
+            print(f'There is not choice as {method}. Please select an valid choice.\n')
+        else:
+            return method
 
-logging.basicConfig(level=logging.INFO, handlers=[file_handler, console_handler])
+def get_excluded_extensions():
+    excluded_extensions = []
+    exclude_choice = input("\nDo you want to exclude specific file extensions? (y/n): ").strip().lower()
 
-def get_user_input():
-    folder_path = input("Enter the folder path to organize: ")
-    
-    if not os.path.isdir(folder_path):
-        # logging.error(f"Invalid directory: {folder_path}")
-        print(f"Error: {folder_path} is not a valid directory.")
-        return None, None
-    
-    print("\nHow would you like to organize your files?")
-    print("1. By file type")
-    print("2. By date")
-    print("3. By both")
-    
-    method = input("Choose an option (1/2/3): ").strip()
-    
-    if method not in ["1", "2", "3"]:
-        # logging.error("Invalid organization method selected")
-        print("Invalid option. Please try again.")
-        return None, None
+    if exclude_choice == 'y':
+        extensions = input("Enter extensions to exclude (e.g., .ini, .sys, .bak): ").strip()
+        excluded_extensions = [ext.strip() for ext in extensions.split(",") if ext.strip()]
 
-    return folder_path, method
+    return excluded_extensions
 
 def main():
-    folder_path, method = get_user_input()
-    
-    if folder_path is None:
-        return
+    while True:
+        try:
+            folder_path = get_folder_path()
+            method = get_method_choice()
+            excluded_extensions = get_excluded_extensions()
 
-    organize_files(folder_path, method)
-    print("Files have been organized successfully!")
+            organize_files(folder_path, method, excluded_extensions)
+            print("\n✅ Files have been organized successfully!\n")
+
+            another = input('Do you want to organize another folder? (y/n): ').strip().lower()
+            if another != 'y':
+                print('👋 Exiting the progam. Goodbye!')
+                break
+
+        except Exception as e:
+            logging.error(f'An unexpected error occured: {str(e)}')
+            print('⚠️ An unexpected error occured. Please try agian.\n')
 
 if __name__ == "__main__":
     main()
