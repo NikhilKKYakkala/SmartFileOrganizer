@@ -1,9 +1,17 @@
-# Folder Organizer
-
 ![Python Version](https://img.shields.io/badge/python-3.8+-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/NikhilKKYakkala/SmartFileOrganizer/python-app.yml)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/NikhilKKYakkala/SmartFileOrganizer/python-app.yml?branch=main)
+![Build](https://github.com/NikhilKKYakkala/SmartFileOrganizer/actions/workflows/python-app.yml/badge.svg?branch=main)
 ![Last Commit](https://img.shields.io/github/last-commit/NikhilKKYakkala/SmartFileOrganizer)
+
+## 🚀 Project Badges
+
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.8+-blue" alt="Python Version" style="margin-right: 10px;">
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="License" style="margin-right: 10px;">
+  <img src="https://img.shields.io/github/actions/workflow/status/NikhilKKYakkala/SmartFileOrganizer/python-app.yml?branch=main" alt="Workflow Status" style="margin-right: 10px;">
+  <img src="https://img.shields.io/github/last-commit/NikhilKKYakkala/SmartFileOrganizer" alt="Last Commit" style="margin-right: 10px;">
+</p>
 
 # SmartFileOrganizer
 
