@@ -1,7 +1,7 @@
 import logging
 import os
 from datetime import datetime
-import colorlog
+from colorlog import ColoredFormatter
 
 def setup_logging():
     logs_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'logs')
@@ -23,7 +23,7 @@ def setup_logging():
 
     console_handler = logging.StreamHandler()
     console_handler.setLevel(logging.WARNING)
-    console_formatter = colorlog.ColoredFormatter(
+    console_formatter = ColoredFormatter(
         '%(log_color)s%(levelname)s - %(message)s',
         log_colors = {
             'DEBUG': 'cyan',

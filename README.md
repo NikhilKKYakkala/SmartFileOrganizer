@@ -1,3 +1,10 @@
+# Folder Organizer
+
+![Python Version](https://img.shields.io/badge/python-3.8+-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/NikhilKKYakkala/SmartFileOrganizer/python-app.yml)
+![Last Commit](https://img.shields.io/github/last-commit/NikhilKKYakkala/SmartFileOrganizer)
+
 # SmartFileOrganizer
 
 SmartFileOrganizer is a flexible Python-based tool that helps you automatically organize files in any folder based on **file type**, **date**, or **both** — keeping your directories clean, efficient, and easy to navigate.

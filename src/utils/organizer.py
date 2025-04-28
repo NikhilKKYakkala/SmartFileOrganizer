@@ -69,3 +69,5 @@ def organize_files(folder_path, method, excluded_extensions):
                 
                 shutil.move(file_path, os.path.join(type_folder, filename))
                 logging.info(f"Moved {filename} to {file_extension}/{date_folder}/")
+
+    logging.info("Files have been organized successfully!")
