@@ -13,6 +13,33 @@
   <img src="https://img.shields.io/github/last-commit/NikhilKKYakkala/SmartFileOrganizer" alt="Last Commit" style="margin-right: 10px;">
 </p>
 
+## 🚀 Project Status
+
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://github.com/NikhilKKYakkala/SmartFileOrganizer/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/NikhilKKYakkala/SmartFileOrganizer/actions)
+[![Last Commit](https://img.shields.io/github/last-commit/NikhilKKYakkala/SmartFileOrganizer?color=blue)](https://github.com/NikhilKKYakkala/SmartFileOrganizer/commits/main)
+[![Issues](https://img.shields.io/github/issues/NikhilKKYakkala/SmartFileOrganizer)](https://github.com/NikhilKKYakkala/SmartFileOrganizer/issues)
+
+<p align="center">
+  <a href="https://github.com/NikhilKKYakkala/SmartFileOrganizer/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/NikhilKKYakkala/SmartFileOrganizer/python-app.yml?branch=main&style=for-the-badge" alt="Build Status">
+  </a>
+  <a href="https://github.com/NikhilKKYakkala/SmartFileOrganizer">
+    <img src="https://img.shields.io/github/last-commit/NikhilKKYakkala/SmartFileOrganizer?style=for-the-badge" alt="Last Commit">
+  </a>
+  <a href="https://github.com/NikhilKKYakkala/SmartFileOrganizer/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/NikhilKKYakkala/SmartFileOrganizer?style=for-the-badge" alt="License">
+  </a>
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge" alt="Python Version">
+</p>
+
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&style=flat-square)](https://www.python.org/)
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&style=for-the-badge)](https://www.python.org/)
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&style=social)](https://www.python.org/)
+
 # SmartFileOrganizer
 
 SmartFileOrganizer is a flexible Python-based tool that helps you automatically organize files in any folder based on **file type**, **date**, or **both** — keeping your directories clean, efficient, and easy to navigate.
