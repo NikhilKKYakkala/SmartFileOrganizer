@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "smartfileorganizer"
+name = "smartfileorganizerny"
 version = "0.1.0"
 description = "Organize your files by type or date automatically"
 authors = [{name="Nikhil Yakkala", email="nikhilyakkala@gmail.com"}]
