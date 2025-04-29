@@ -2,18 +2,75 @@
 
 SmartFileOrganizer is a flexible Python-based tool that helps you automatically organize files in any folder based on **file type**, **date**, or **both** — keeping your directories clean, efficient, and easy to navigate.
 
-## 🚀 Features
-- Organize files by:
-  - File Type (e.g., PDFs, Images, Executables)
-  - Date (e.g., organized into Year-Month folders)
-  - Combination of File Type and Date
-- Customizable target folder (choose any folder you want)
-- Automatically creates necessary subfolders if they don't exist
-- Detailed logging of all operations
-- Easy to schedule (with Task Scheduler, cron jobs, etc.)
+---
 
-## 📂 Example Folder Structures
-**By Type:**
+## 🔥 Features
+
+- **Organize by File Type**: PDFs, Images, Videos, etc.
+- **Organize by Date**: Sort files into year-month folders.
+- **Flexible Organization**: Combine both type and date-based sorting.
+- **Customizable Folder**: Choose any target folder to organize.
+- **Automatic Folder Creation**: Creates subfolders automatically if they don't exist.
+- **Detailed Logging**: Provides logs for all operations.
+- **Easy Scheduling**: Can be run via Task Scheduler (Windows) or Cron Jobs (Linux/macOS).
+
+---
+
+## 🚀 Getting Started
+
+You can use Smart File Organizer in **two ways**:
+
+---
+
+### 1. Install as a Python Package (Recommended)
+
+- **Install from PyPI**:
+
+  ```bash
+  pip install smartfileorganizerny
+  ```
+
+- **Use it directly in your code**:
+
+  ```python
+  from smartfileorganizerny import organizer
+
+  organizer.start()
+  ```
+
+This is the easiest and most flexible way to use the project.
+
+---
+
+### 2. Clone the Repository
+
+- **Clone the GitHub repository**:
+
+  ```bash
+  git clone https://github.com/NikhilKKYakkala/SmartFileOrganizer.git
+  cd SmartFileOrganizer
+  ```
+
+- **Install dependencies**:
+
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+- **Run the script manually**:
+
+  ```bash
+  python src/main.py
+  ```
+
+Follow the on-screen prompts to specify the folder and preferred organization method.
+
+---
+
+## 📁 Example Folder Structures
+
+**By Type**:
+
 ```
 Downloads/
 ├── PDFs/
@@ -21,14 +78,16 @@ Downloads/
 ├── Videos/
 ```
 
-**By Date:**
+**By Date**:
+
 ```
 Downloads/
 ├── 2025-04/
 ├── 2025-05/
 ```
 
-**By Both:**
+**By Both Type and Date**:
+
 ```
 Downloads/
 ├── PDFs/
@@ -38,41 +97,18 @@ Downloads/
 │   ├── 2025-04/
 │   ├── 2025-05/
 ```
+---
 
-## 🛠️ Requirements
-- Python 3.7+
-- Libraries:
-  - os
-  - shutil
-  - datetime
-  - logging
-  - (Optional: watchdog for real-time monitoring)
+## 🔄 Automation
 
-Install any additional dependencies with:
-```
-pip install -r requirements.txt
-```
+You can schedule Smart File Organizer to run automatically at specific intervals:
 
-## ⚙️ How to Use
-1. Clone this repository:
-```
-git clone https://github.com/yourusername/SmartFileOrganizer.git
-```
-2. Navigate to the project directory:
-```
-cd SmartFileOrganizer
-```
-3. Run the script:
-```
-python main.py
-```
-4. Follow the prompts to:
-   - Enter the folder path you want to organize
-   - Choose your preferred organization method (type, date, or both)
+- **Windows**: Use Task Scheduler
+- **Linux/macOS**: Use Cron Jobs
 
-## 📅 Automation
-- **Windows:** Set up a Task Scheduler job to run `main.py` periodically
-- **Linux/macOS:** Set up a cron job (e.g., daily organization)
+Example: Organize your "Downloads" folder every night automatically!
+
+---
 
 ## 🚀 Project Badges
 
@@ -89,8 +125,30 @@ python main.py
   </a>
 </p>
 
-## 📜 License
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+---
 
 ## 🤝 Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Make your changes.
+4. Submit a pull request.
+
+Please follow best coding practices and update documentation as needed.
+
+---
+
+## ✨ Future Improvements
+
+- Duplicate File Detection and Management
+- File Encryption Option
+- Cloud Storage Integration (Google Drive, Dropbox, etc.)
+- Graphical User Interface (GUI)
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
