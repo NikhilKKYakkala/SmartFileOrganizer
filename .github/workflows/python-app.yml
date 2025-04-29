@@ -27,4 +27,4 @@ jobs:
 
     - name: Run Python script check
       run: |
-        python -m py_compile src/main.py
+        python -m py_compile src/smartfileorganizerny/main.py
