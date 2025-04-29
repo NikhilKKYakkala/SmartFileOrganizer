@@ -8,7 +8,9 @@ A good commit message helps others (and your future self) understand the context
 
 ### General Format:
 
+```
 <type>(<scope>): <message>
+```
 
 [Optional body]
 
@@ -63,14 +65,18 @@ When you are pushing code with a version tag (e.g., `v1.0.0`), follow these step
 1. **Create a Git Tag:**
    First, create a tag for your commit (usually based on the versioning scheme). Use the following command:
 
+   ```bash
    git tag -a v0.1.1 -m "Release version 0.1.1"
+   ```
 
    Here, `v0.1.1` is the tag name and `"Release version 0.1.1"` is the message for the tag.
 
 2. **Push Code and Tag:**
    After tagging the commit, you can push the tag and the code to the repository with the following command:
 
+   ```bash
    git push origin main --tags
+   ```
 
    This will push both the code and the tags to the remote repository. The `--tags` flag ensures that the tags are pushed along with your commits.
 
@@ -78,7 +84,9 @@ When you are pushing code with a version tag (e.g., `v1.0.0`), follow these step
 
 If you only want to push a specific tag, you can use the following command:
 
+```bash
 git push origin v0.1.1
+```
 
 This will push only the specified tag (`v0.1.1` in this case) to the remote repository.
 
