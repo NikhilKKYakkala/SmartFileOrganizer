@@ -1,8 +1,8 @@
 import os
 import argparse
 import logging
-from utils.organizer import organize_files
-from utils.logger import setup_logging
+from smartfileorganizerny.utils.organizer import organize_files
+from smartfileorganizerny.utils.logger import setup_logging
 
 setup_logging()
 
