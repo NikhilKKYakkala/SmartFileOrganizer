@@ -4,7 +4,7 @@ from datetime import datetime
 from colorlog import ColoredFormatter
 
 def setup_logging():
-    logs_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'logs')
+    logs_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), 'logs')
     os.makedirs(logs_dir, exist_ok=True)
 
     today = datetime.now().strftime('%Y-%m-%d')
