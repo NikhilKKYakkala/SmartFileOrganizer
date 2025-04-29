@@ -12,8 +12,6 @@ A good commit message helps others (and your future self) understand the context
 <type>(<scope>): <message>
 ```
 
-[Optional body]
-
 - **`<type>`**: The type of change being made. Examples include:
   - `feat`: A new feature
   - `fix`: A bug fix
