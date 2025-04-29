@@ -33,9 +33,7 @@ You can use Smart File Organizer in **two ways**:
 - **Use it directly in your code**:
 
   ```python
-  from smartfileorganizerny import organizer
-
-  organizer.start()
+  smartfileorganizer
   ```
 
 This is the easiest and most flexible way to use the project.
